@@ -20,6 +20,7 @@ function EditBeanForm(props) {
 
   return (
     <React.Fragment>
+      <h1>Edit {bean.name} </h1>
       <ReusableForm
         formSubmissionHandler={handleEditBeanFormSubmission}
         buttonText="Update Bean" />

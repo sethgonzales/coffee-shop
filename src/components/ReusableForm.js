@@ -8,7 +8,7 @@ function ReusableForm(props) {
         <form onSubmit={props.formSubmissionHandler}>
           <input
             type='text'
-            name='names'
+            name='name'
             placeholder='Name of Beans' /><br />
           <input
             type='text'
@@ -20,7 +20,7 @@ function ReusableForm(props) {
             placeholder='Roast' /><br />
           <input
             name='weight'
-            placeholder='Inventory Weight.' /><br />{/*make this set to 130 pounds */}
+            placeholder='Inventory Weight' /><br />{/*make this set to 130 pounds */}
           <input
             name='price'
             placeholder='Price.' /><br />

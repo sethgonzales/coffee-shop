@@ -6,6 +6,7 @@ import { v4 } from 'uuid';
 function NewBeanForm(props) {
   return (
     <React.Fragment>
+      <h1>Create New Bean</h1>
       <ReusableForm formSubmissionHandler={handleNewBeanSubmission}
       buttonText="Create" />
     </React.Fragment>

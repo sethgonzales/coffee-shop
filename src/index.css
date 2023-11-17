@@ -9,7 +9,7 @@ body {
 }
 
 .container-main {
-  border: solid 2px black;
+  border: solid 0px;
   border-radius: 10px;
   height: auto;
   margin: 4%;
