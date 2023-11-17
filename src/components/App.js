@@ -9,10 +9,12 @@ function App() {
         <Header />
       </div>
       <div class="container">
-          <div class="container-main" id="beans">
+        <div class="row">
+          <div class="col-11 container-main">
             <BeanControl />
           </div>
         </div>
+      </div>
     </React.Fragment>
   );
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Header.css';
-import BeanBag from './../img/coffee-bag.svg'
+import Logo from './../img/cafe-logo.jpg'
 
 function Header() {
   return (
     <React.Fragment>
-      <img src={BeanBag} class="header-img"></img>
-      <h1>Pierre's Cafe</h1>
+      <img src={Logo} class="header-img"></img>
+      <h1>Cafe Inventory</h1>
     </React.Fragment>
   )
 }

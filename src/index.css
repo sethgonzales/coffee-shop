@@ -5,6 +5,7 @@ body {
   background-image: url(./img/beans.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: black;
 }
 
 .container-main {
@@ -13,27 +14,10 @@ body {
   height: auto;
   margin: 4%;
   padding: 2%;
-  margin-top: 15%;
-  background-color: rgba(217, 150, 150, 0.815);
-}
-
-.container-main h1 {
-  font-family: Luminari, fantasy;
-  text-align: center;
-}
-
-.container-main h2 {
-  margin-top: 5%; 
-}
-.container-main h4 {
-  margin: 2%;
-}
-
-.container-main label {
-  margin: 2%;
+  margin-top: 250px; 
+  background-color: rgba(255, 255, 255, 0.909);
 }
 
 .form {
-  text-align: center;
-
+  /* text-align: center; */
 }

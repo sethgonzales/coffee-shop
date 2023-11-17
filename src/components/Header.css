@@ -1,18 +1,16 @@
 #header {
   display: flex;
   align-items: center;
-  background-color: rgb(216, 51, 51);
+  background-color: rgb(0, 0, 0);
   width:100%;
-  border: 1px solid rgb(0, 0, 0);
   height: 150px;
   margin: 0; 
   position:fixed;
   box-sizing: border-box;
 }
 
-
 #header h1{
-  font-family: Luminari, fantasy;
+  font-family: 'american typewriter', serif ;
   color: white;
   text-align: left;
   padding-left: 3%;
@@ -22,4 +20,5 @@
 .header-img{
   height: 90%;
   margin-left: 1%;
+  border-radius: 100px;
 }
