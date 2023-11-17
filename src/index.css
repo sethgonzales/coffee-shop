@@ -21,3 +21,16 @@ body {
 .form {
   /* text-align: center; */
 }
+
+button {
+  margin: 2%;
+  display: inline-block;
+
+
+}
+
+.navlinks-three { 
+  /* display: inline-block; */
+
+  margin: 2%, 10%, 2%, 10%;
+}

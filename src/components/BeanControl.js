@@ -83,7 +83,7 @@ class BeanControl extends React.Component {
           bean={this.state.selectedBean}
           onEditBean={this.handleEditingBeanInList} />
       );
-      buttonText = "Return to Bean List";
+      buttonText = "Return to Inventory";
 
       //Check Selected Bean (Bean Detail) State
     } else if (this.state.selectedBean != null) {
@@ -92,17 +92,17 @@ class BeanControl extends React.Component {
           bean={this.state.selectedBean}
           onClickingDelete={this.handleDeletingBean}
           onClickingEdit={this.handleEditClick} />
-      buttonText = "Return to Bean List";
+      buttonText = "Return to Inventory";
 
       //Check Form Visible (New Bean) State
     } else if (this.state.formVisibleOnPage) {
       currentVisibleState = <NewBeanForm onNewBeanCreation={this.handleAddingNewBeanToList} />;
-      buttonText = "Return to Bean List";
+      buttonText = "Return to Inventory";
 
       //Show List of Beans
     } else {
       currentVisibleState = <BeanList beanList={this.state.mainBeanList} onBeanSelection={this.handleChangingSelectedBean} />;
-      buttonText = "Add Bean"
+      buttonText = "Add to Inventory"
     }
 
     return (

@@ -5,7 +5,7 @@ import Bean from './Bean';
 function BeanList(props) {
   return (
     <React.Fragment>
-      <h1>Beans</h1>
+      <h1>Coffee Bean Inventory</h1>
       {props.beanList.map((bean) =>
         <Bean
           whenBeanClicked={props.onBeanSelection}

@@ -17,7 +17,7 @@ function Bean(props){
 }
 
 Bean.propTypes = {
-  names: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   origin: PropTypes.string.isRequired,
   roast: PropTypes.string.isRequired,
   weight: PropTypes.number.isRequired,
