@@ -16,16 +16,60 @@ class BeanControl extends React.Component {
   }
 
   //New Bean
-
+  handleAddingNewBeanToList = (newBean) => {
+    const newMainBeanList = this.state.mainBeanList.concat(newBean);
+    this.setState({ mainBeanList: newMainBeanList, formVisibleOnPage: false });
+  }
 
   //Edit Bean
+  handleEditClick = () => {
+    this.setState({ editing: true });
+  }
 
+  handleEditingBeanInList = (beanToEdit) => {
+    const editedMainBeanList = this.state.mainBeanList
+      .filter(bean => bean.id !== this.state.selectedBean.id)
+      .concat(beanToEdit);
+    this.setState({
+      mainBeanList: editedMainBeanList,
+      editing: false,
+      selectedBean: null
+    });
+  }
 
   //View Bean
+  handleChangingSelectedBean = (id) => {
+    const selectedBean = this.state.mainBeanList
+      .filter(bean => bean.id === id)[0];
+    this.setState({
+      selectedBean: selectedBean
+    })
+  }
 
+  //Delete Bean
+  handleDeletingBean = (id) => {
+    const newMainBeanList = this.state.mainBeanList
+      .filter(bean => bean.id !== id);
+    this.setState({
+      mainBeanList: newMainBeanList,
+      selectedBean: null
+    });
+  }
 
-  //Vis Button
-
+  //Visability Button
+  handleClick = () => {
+    if (this.state.selectedBean != null) {
+      this.setState({
+        formVisibleOnPage: false,
+        selectedBean: null,
+        editing: false
+      });
+    } else {
+      this.setState(prevState => ({
+        formVisibleOnPage: !prevState.formVisibleOnPage,
+      }));
+    }
+  }
 
   //To Render
   render() {
@@ -49,10 +93,25 @@ class BeanControl extends React.Component {
           onClickingDelete={this.handleDeletingBean}
           onClickingEdit={this.handleEditClick} />
       buttonText = "Return to Bean List";
-    
+
       //Check Form Visible (New Bean) State
     } else if (this.state.formVisibleOnPage) {
+      currentVisibleState = <NewBeanForm onNewBeanCreation={this.handleAddingNewBeanToList} />;
+      buttonText = "Return to Bean List";
 
+      //Show List of Beans
+    } else {
+      currentVisibleState = <BeanList beanList={this.state.mainBeanList} onBeanSelection={this.handleChangingSelectedBean} />;
+      buttonText = "Add Bean"
     }
+
+    return (
+      <React.Fragment>
+        {currentVisibleState}
+        <button onClick={this.handleClick}>{buttonText}</button>
+      </React.Fragment>
+    )
   }
 }
+
+export default BeanControl;

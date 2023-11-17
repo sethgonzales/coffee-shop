@@ -24,7 +24,7 @@ function NewBeanForm(props) {
   }  
 }
 
-NewBeanForm.PropTypes = {
+NewBeanForm.propTypes = {
   onNewBeanCreation: PropTypes.func
 };
 

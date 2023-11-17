@@ -6,7 +6,7 @@ function Header() {
   return (
     <React.Fragment>
       <img src={BeanBag} class="header-img"></img>
-        <h1>Pierre's Cafe</h1>
+      <h1>Pierre's Cafe</h1>
     </React.Fragment>
   )
 }

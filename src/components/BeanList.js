@@ -20,7 +20,7 @@ function BeanList(props) {
   )
 }
 
-BeanList.PropTypes = {
+BeanList.propTypes = {
   beanList: PropTypes.array,
   onBeanSelection: PropTypes.func
 }

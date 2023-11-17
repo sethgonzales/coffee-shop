@@ -1,13 +1,39 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./img/beans.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-main {
+  border: solid 2px black;
+  border-radius: 10px;
+  height: auto;
+  margin: 4%;
+  padding: 2%;
+  margin-top: 15%;
+  background-color: rgba(217, 150, 150, 0.815);
+}
+
+.container-main h1 {
+  font-family: Luminari, fantasy;
+  text-align: center;
+}
+
+.container-main h2 {
+  margin-top: 5%; 
+}
+.container-main h4 {
+  margin: 2%;
+}
+
+.container-main label {
+  margin: 2%;
+}
+
+.form {
+  text-align: center;
+
 }
