@@ -3,19 +3,33 @@ import PropTypes from "prop-types";
 import Bean from './Bean';
 
 function BeanList(props) {
+  const handleSoldBag = (beanId) => {
+    const updatedList = props.beanList.map(bean => {
+      if (bean.id === beanId && bean.weight > 0) {
+        return { ...bean, weight: bean.weight - 1 }; 
+      }
+      return bean;
+    });
+    props.onSoldBag(updatedList);
+  };
+
+
   return (
     <React.Fragment>
       <h1>Coffee Bean Inventory</h1>
       {props.beanList.map((bean) =>
-        <Bean
-          whenBeanClicked={props.onBeanSelection}
-          name={bean.name}
-          origin={bean.origin}
-          roast={bean.roast}
-          weight={bean.weight}
-          price={bean.price}
-          id={bean.id}
-          key={bean.id} />
+        <div key={bean.id}>
+          <Bean
+            whenBeanClicked={props.onBeanSelection}
+            name={bean.name}
+            origin={bean.origin}
+            roast={bean.roast}
+            weight={bean.weight}
+            price={bean.price}
+            id={bean.id}
+          />
+          <button id="sold" onClick={() => handleSoldBag(bean.id)}>Sold Bag</button>
+        </div>
       )}
     </React.Fragment>
   )
@@ -23,7 +37,8 @@ function BeanList(props) {
 
 BeanList.propTypes = {
   beanList: PropTypes.array,
-  onBeanSelection: PropTypes.func
+  onBeanSelection: PropTypes.func,
+  onSoldBag: PropTypes.func
 }
 
 export default BeanList;

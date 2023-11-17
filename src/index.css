@@ -14,23 +14,39 @@ body {
   height: auto;
   margin: 4%;
   padding: 2%;
-  margin-top: 250px; 
+  margin-top: 250px;
   background-color: rgba(255, 255, 255, 0.909);
 }
 
-.form {
-  /* text-align: center; */
-}
-
 button {
-  margin: 2%;
-  display: inline-block;
-
-
+  background-color: black;
+  color: white;
+  font-family: Gill sans, sans-serif;
+  font-size: large;
+}
+.navlinks-two button {
+  margin-right: 2%;
 }
 
-.navlinks-three { 
-  /* display: inline-block; */
+.update {
+  background-color: white;
+  color: black;
+}
 
-  margin: 2%, 10%, 2%, 10%;
+
+#delete {
+  background-color: rgba(255, 0, 0, 0.514);
+  color: black;
+}
+
+#sold {
+  background-color: rgba(0, 128, 0, 0.803);
+  font-size: small;
+  align-items: center;
+  color: black;
+}
+
+#big-button button {
+  width: 100%;
+  margin-top: 3%;
 }

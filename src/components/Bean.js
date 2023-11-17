@@ -7,10 +7,10 @@ function Bean(props){
     <React.Fragment>
       <div onClick = {() => props.whenBeanClicked(props.id)}>
         <h3>{props.name}</h3>
-        <p><em>Origin: </em> {props.origin}</p>
-        <p><em>Roast: </em> {props.roast}</p>
-        <p><em>Inventory Weight (lbs): </em> {props.weight}</p>
-        <p><em>Price: </em> {props.price}</p>
+        <p><b>Origin: </b> {props.origin}</p>
+        <p><b>Roast: </b> {props.roast}</p>
+        <p><b>Inventory Weight (lbs): </b> {props.weight}</p>
+        <p><b>Price: </b> {props.price}</p>
       </div>
     </React.Fragment>
   );

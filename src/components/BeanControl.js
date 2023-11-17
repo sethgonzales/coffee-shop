@@ -56,6 +56,12 @@ class BeanControl extends React.Component {
     });
   }
 
+  //Sold Bag
+  handleSoldBag = (updatedList) => {
+    this.setState({ mainBeanList: updatedList });
+  }
+  
+
   //Visability Button
   handleClick = () => {
     if (this.state.selectedBean != null) {
@@ -101,14 +107,16 @@ class BeanControl extends React.Component {
 
       //Show List of Beans
     } else {
-      currentVisibleState = <BeanList beanList={this.state.mainBeanList} onBeanSelection={this.handleChangingSelectedBean} />;
+      currentVisibleState = <BeanList beanList={this.state.mainBeanList} onBeanSelection={this.handleChangingSelectedBean} onSoldBag={this.handleSoldBag} />;
       buttonText = "Add to Inventory"
     }
 
     return (
       <React.Fragment>
         {currentVisibleState}
+        <div id="big-button">
         <button onClick={this.handleClick}>{buttonText}</button>
+        </div>
       </React.Fragment>
     )
   }
