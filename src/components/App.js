@@ -9,8 +9,8 @@ function App() {
         <Header />
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-11 container-main">
+        <div class="row justify-content-center">
+          <div class="col-6 container-main">
             <BeanControl />
           </div>
         </div>

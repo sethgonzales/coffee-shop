@@ -18,7 +18,7 @@ function BeanList(props) {
     <React.Fragment>
       <h1>Coffee Bean Inventory</h1>
       {props.beanList.map((bean) =>
-        <div key={bean.id}>
+        <div className="list-item"  key={bean.id}>
           <Bean
             whenBeanClicked={props.onBeanSelection}
             name={bean.name}
@@ -28,7 +28,8 @@ function BeanList(props) {
             price={bean.price}
             id={bean.id}
           />
-          <button id="sold" onClick={() => handleSoldBag(bean.id)}>Sold Bag</button>
+          <button id="sold" className="green"  onClick={() => handleSoldBag(bean.id)}>Sold Bag</button>
+          <hr />
         </div>
       )}
     </React.Fragment>

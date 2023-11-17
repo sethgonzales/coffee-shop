@@ -12,10 +12,8 @@ function BeanDetail(props) {
       <p><b>Roast: </b> {bean.roast}</p>
       <p><b>Inventory Weight (lbs): </b> {bean.weight}</p>
       <p><b>Price: </b> {bean.price}</p>
-      <div className="navlinks-two">
-        <button class="update" onClick={props.onClickingEdit}>Update</button>
-        <button id="delete" onClick={() => onClickingDelete(bean.id)}>Delete</button>
-      </div>
+      <button className="green two-buttons" onClick={props.onClickingEdit}>Update</button>
+      <button id="delete" onClick={() => onClickingDelete(bean.id)}>Delete</button>
     </React.Fragment>
   );
 }

@@ -24,29 +24,62 @@ button {
   font-family: Gill sans, sans-serif;
   font-size: large;
 }
-.navlinks-two button {
+
+#big-button button {
+  width: 100%;
+  margin-top: 2%;
+}
+
+#big-button button:hover {
+  background-color: rgba(0, 0, 0, 0.745);
+}
+
+.two-buttons {
   margin-right: 2%;
 }
 
-.update {
-  background-color: white;
-  color: black;
+#reuse-button {
+  margin-top: 1%;
 }
 
+.green {
+  background-color: rgba(0, 128, 0, 0.803);
+}
+
+.green:hover {
+  background-color: green;
+}
 
 #delete {
   background-color: rgba(255, 0, 0, 0.514);
   color: black;
 }
 
-#sold {
-  background-color: rgba(0, 128, 0, 0.803);
-  font-size: small;
-  align-items: center;
-  color: black;
+#delete:hover {
+  background-color: red;
+  color: white;
 }
 
-#big-button button {
-  width: 100%;
-  margin-top: 3%;
+#sold {
+  font-size: small;
+}
+
+.list-item {
+  margin: 1%;
+  margin-bottom: 4%;
+}
+
+.list-item h3 {
+  font-weight: bold;
+}
+
+.beanbag-img {
+  height: 35px;
+  border-radius: 100px;
+  float: left;
+}
+
+.hover :hover {
+  cursor: pointer;
+  opacity: 0.7;
 }

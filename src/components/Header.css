@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+#header:hover { 
+  background-color: rgb(55, 12, 12);
+  cursor: url(./../img/coffee-cup.png), 5px;
+}
+
 #header h1{
   font-family: 'american typewriter', serif ;
   color: white;

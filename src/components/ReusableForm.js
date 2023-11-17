@@ -35,7 +35,7 @@ function ReusableForm(props) {
             placeholder='Price'
             min='0'
             required /><br />
-          <button class="update" type='submit'>{props.buttonText}</button>
+          <button id="reuse-button" className="green" type='submit'>{props.buttonText}</button>
         </form>
       </div>
     </React.Fragment>
