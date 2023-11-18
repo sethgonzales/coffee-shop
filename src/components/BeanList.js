@@ -24,8 +24,8 @@ function BeanList(props) {
             name={bean.name}
             origin={bean.origin}
             roast={bean.roast}
-            weight={bean.weight}
-            price={bean.price}
+            weight={parseInt(bean.weight)}
+            price={parseFloat(bean.price)}
             id={bean.id}
           />
           <button id="sold" className="green"  onClick={() => handleSoldBag(bean.id)}>Sold Bag</button>
