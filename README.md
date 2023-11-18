@@ -52,6 +52,6 @@ Copyright © 2023
 
 ## Contact Information
 
-If you encounter any additional bugs, please report them to sethgonzales157@gmail.com.
+If you encounter any additional bugs, please report them to sethgonzales157@gmail.com!
 
 <p align="center"><a href="#">Return to Top</a></p>
