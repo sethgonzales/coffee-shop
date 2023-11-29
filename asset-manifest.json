@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84c9566f.css",
+    "main.js": "/static/js/main.b59dc369.js",
+    "static/js/787.4e710f13.chunk.js": "/static/js/787.4e710f13.chunk.js",
+    "static/media/beans.jpg": "/static/media/beans.2bdc7cbe4e90debb7815.jpg",
+    "static/media/cafe-logo.jpg": "/static/media/cafe-logo.b5c1a4ec26793af81955.jpg",
+    "static/media/bag-icon.png": "/static/media/bag-icon.43522ab9a12c009fe25b.png",
+    "index.html": "/index.html",
+    "main.84c9566f.css.map": "/static/css/main.84c9566f.css.map",
+    "main.b59dc369.js.map": "/static/js/main.b59dc369.js.map",
+    "787.4e710f13.chunk.js.map": "/static/js/787.4e710f13.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84c9566f.css",
+    "static/js/main.b59dc369.js"
+  ]
+}
