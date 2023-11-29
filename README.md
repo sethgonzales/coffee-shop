@@ -17,7 +17,7 @@
 
 ## Description
 
-_In this application, users can utilize full CRUD functionality for any bags of coffee that are stored in the coffee shop's inventory. Additionally, the weight of each bag of coffee in the inventory is automatically updated with each bag sold. This application is build using React._
+_In this [application](https://sethgonzales.github.io/coffee-shop/), users can utilize full CRUD functionality for any bags of coffee that are stored in the coffee shop's inventory. Additionally, the weight of each bag of coffee in the inventory is automatically updated with each bag sold. This application is build using React._
 
 ## Component Diagram
 
